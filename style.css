@@ -99,3 +99,44 @@ body {
     font-size: 12px;
 
 }
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 41px;
+
+    padding: 0 8% 6%;
+}
+
+.rodape__img {
+    width: 9%;
+}
+
+.rodape__conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.rodape__conteudo__menu {
+    display: flex;
+    gap: 12px;
+}
+
+.rodape__menu__link {
+    color: var(--branco-principal);
+
+    text-decoration: none;
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+}
+
+.rodape__conteudo__texto {
+    color: var(--cinza-secundario);
+
+    text-align: center;
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+}
