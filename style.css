@@ -30,6 +30,8 @@ body {
     color: var(--branco-principal);
 }
 
+/* HEADER - CABEÇALHO */
+
 .cabecalho {
     background-image: url(./assets/Background.png);
     background-repeat: no-repeat;
@@ -90,7 +92,6 @@ body {
 
 .cabecalho__botao__navegacao-1:hover {
     background-color: var(--azul-botao-1);
-    border: 1px solid var(--azul-botao-1);
 }
 
 .cabecalho__botao__navegacao-2 {
@@ -108,12 +109,21 @@ body {
     color: var(--branco-principal);
 }
 
+.cabecalho__botao__navegacao-2:hover {
+    background-color: var(--branco-principal);
+    color: var(--azul-botao-1);
+}
+
 .cabecalho__observacao {
     color: var(--cinza-secundario);
     font-family: var(--fonte-principal);
     font-size: var(--tamanho-12);
 
 }
+
+/* MAIN - CONTEÚDO PRINCIPAL */
+
+/* FOOTER - RODAPÉ */
 
 .rodape {
     display: flex;
