@@ -16,6 +16,11 @@
     --tamanho-12: 0.75rem;
     --tamanho-14: 0.875rem;
     --tamanho-16: 1rem;
+    --tamanho-18: 1.125rem;
+    --tamanho-20: 1.25rem;
+    --tamanho-22: 1.375rem;
+    --tamanho-24: 1.5rem;
+    --tamanho-26: 1.625rem;
     --tamanho-28: 1.75rem;
     --tamanho-32: 2rem;
     --tamanho-48: 3rem;
@@ -27,6 +32,7 @@
     padding: 0;
     
     text-decoration: none;
+    font-family: var(--fonte-principal);
 }
 
 body {
@@ -127,7 +133,7 @@ body {
 
 .apresentacao {
     margin: auto;
-    padding: 0 0 10% 0;
+    padding: 0 0 5% 0;
 
     display: flex;
     justify-content: space-between;
@@ -203,6 +209,30 @@ body {
     text-align: center;
 }
 
+.apresentacao__dispositivo {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    text-align: center;
+}
+
+.apresentacao__dispositivo__lista {
+    display: flex;
+    justify-content: center;
+    gap: 69px;
+
+    list-style: none;
+}
+
+.lista__item__h3 {
+    font-size: var(--tamanho-32);
+}
+
+.lista__img {
+    width: auto;
+}
+
 /* FOOTER - RODAPÉ */
 
 .rodape {
@@ -273,6 +303,14 @@ body {
         width: 85%;
     }
 
+    .apresentacao {
+        padding: 0 0 10% 0;
+    }
+
+    .lista__img {
+        width: 80%;
+    }
+
     .rodape {
         background-color: var(--azul-botao-1);
         padding: 4% 8% 8%;
@@ -313,6 +351,18 @@ body {
         width: 300px;
     }
 
+    .apresentacao h2 {
+        font-size: var(--tamanho-24);
+    }
+
+    .apresentacao h3 {
+        font-size: var(--tamanho-20);
+    }
+
+    .apresentacao {
+        padding: 0 0 20% 0;
+    }
+
     .apresentacao__conteudo {
         flex-direction: column;
         gap: 32px;
@@ -328,6 +378,15 @@ body {
 
     .apresentacao__conteudo__container {
         align-items: center;
+    }
+
+    .apresentacao__dispositivo__lista {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .lista__img {
+        width: 50%;
     }
 
     .rodape__conteudo__menu {
